@@ -1,0 +1,44 @@
+
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px ;
+  text-transform: capitalize;
+}
+
+.card {
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px 0px rgb(73,73,73,0.5);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #070707;
+  background-color:  rgb(73,73,73,0.2);
+}
+
+.card img {
+  height: 100px;
+  width: 100%;
+}
+
+.card p {
+  opacity: 0.5;
+  color: #070707;
+}
+
+.cards a {
+  margin: 20px;
+  -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+  transition: color 1s; /* For modern browsers */
+}
+
+.card a:hover {
+    color: #ffff;
+}
+
+.card a:visited {
+  color: rgb(214, 98, 59);
+}
+
+
