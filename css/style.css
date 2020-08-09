@@ -10,12 +10,13 @@
 /* Utilities */
 body {
   margin: 0;
-  font-family: 'Epilogue', sans-serif;
+  font-family: sans-serif;
   text-transform: uppercase;
+  background-color: lightgrey;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Epilogue', sans-serif;
+  font-family: sans-serif;
 }
 
 a {
@@ -28,6 +29,10 @@ ul {
 
 li {
   display: inline;
+}
+
+.culture-in-bloom {
+  text-align: center;
 }
 
 .list-inline {
@@ -58,6 +63,11 @@ li {
 .container h1, p {
   color: #070707;
   padding-left: 5px;
+}
+
+.culture-in-bloom {
+  text-align: center;
+  text-shadow: #ffff;
 }
 
 @media (max-width: 960px) {

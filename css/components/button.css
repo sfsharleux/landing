@@ -1,63 +1,108 @@
-.btn-medium {
-  background-color: grey;
-  border: 1px solid #999;
-  color: #999;
-  opacity: 0.6;
-  padding: 15px 25px;
-  border-radius: 50px;
-  font-weight: lighter;
+.button {
+    display: inline-flex;
+    text-decoration: none;
+    position: relative;
+    margin-top: 40px;
 }
 
-.btn-medium:hover {
-  opacity: 1;
-  text-decoration: none;
-  color: #99999;
+.button .bottom {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0);
+    display: block;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
 }
 
-.btn-treehouse {
-  text-decoration: none;
-  background: #6AD58B;
-  color: white;
-  font-weight: 700;
-  padding: 15px 25px;
-  border-radius: 5px;
-  transition: 0.3s ease;
+.button .top {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px 34px 22px 34px;
+    border: 2px solid #ffff;
 }
 
-.btn-treehouse:hover {
-  background: #3ac162;
-  opacity: 1;
-  text-decoration: none;
+.button-dark .top {
+    border: 2px solid #070707;
 }
 
-.btn-yours {
-  display: inline-table;
-  padding: 0.5em 3em;
-  border: 0.16em solid #070707;
-  border-radius: 5px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Epilogue',sans-serif;
-  font-weight: 400;
-  color: #070707;
-  text-align: center;
-  transition: all 0.15s;
+.button .top .label {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #ffff;
+    font-size: 12px;
+    line-height: 110%;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
 }
 
-.btn-yours :hover{
-  color:#black;
-  border-color:#black;
+.button-dark .top .label {
+    color: #fff;
 }
 
-.btn-yours :active{
-  color:#black;
-  border-color:#black;
+.button:hover .bottom {
+    left: 0;
+    top: 0;
+    background-color: #f3f3f3;
 }
 
-@media all and (max-width:30em){
-  .btn-yours{
-  display:block;
-  margin:0.4em auto;
- }
+.button:hover .top .label {
+    color: #070707;
 }
 
+.button-border {
+    position: absolute;
+    background-color: #070707;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+.button:hover .top .button-border-left,.button:hover .top .button-border-right {
+    height: calc(100% + 2px);
+}
+
+.button:hover .top .button-border-top,.button:hover .top .button-border-bottom {
+    width: calc(100% + 2px);
+}
+
+.button-border-left {
+    left: -2px;
+    bottom: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.button-border-top {
+    left: -2px;
+    top: -2px;
+    width: 0;
+    height: 2px;
+}
+
+.button-border-right {
+    right: -2px;
+    top: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.button-border-bottom {
+    right: -2px;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+}

@@ -10,16 +10,17 @@
 .card {
   width: 200px;
   border-radius: 5px;
-  box-shadow: 10px 10px 5px 0px rgb(73,73,73,0.5);
+  box-shadow: 10px 10px 5px 0px #070707;
   text-align: center;
   padding: 20px;
   border: 1px solid #070707;
-  background-color:  rgb(73,73,73,0.2);
+  background-color: #ffff;
 }
 
 .card img {
   height: 100px;
   width: 100%;
+  border: 1px solid #070707;
 }
 
 .card p {
@@ -28,13 +29,14 @@
 }
 
 .cards a {
+  text-decoration: none;
   margin: 20px;
-  -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
-  transition: color 1s; /* For modern browsers */
+  -webkit-transition: color 1s;
+  transition: color 1s;
 }
 
 .card a:hover {
-    color: #ffff;
+    background-color: #ffff;
 }
 
 .card a:visited {
